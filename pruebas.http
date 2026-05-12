@@ -1,0 +1,17 @@
+### Listar usuarios iniciales
+GET http://localhost:8080/lista-usuarios
+
+### Crear un nuevo usuario (Prueba para la evaluación)
+POST http://localhost:8080/crear
+Content-Type: application/json
+
+{
+    "nombre": "Eduardo",
+    "apellido": "Gomez",
+    "id": 10,
+    "email": "edu@ufro.cl",
+    "fechaCreacion": "2026-05-10T22:30:00"
+}
+
+### Verificar que se agregó a la lista
+GET http://localhost:8080/lista-usuarios
